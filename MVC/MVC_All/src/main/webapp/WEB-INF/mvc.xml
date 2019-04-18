@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- SimpleUrlHandlerMapping -->
+	<!-- <bean id="vc" class="com.ma.controller.ViewWelcomeController"/>
+	<bean id="suhm" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/welcome.htm">vc</prop>
+			</props>
+		</property>
+	</bean> -->
+	
+	<!-- BeanNameUrlHandlerMapping -->
+	<!-- <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	<bean id="/welcome.htm" class="com.ma.controller.ViewWelcomeController"/> -->
+	
+	<!-- ControllerClassNameHandlerMapping -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+		<property name="caseSensitive" value="false"/>
+	</bean>
+	
+	<bean class="com.ma.controller.ViewWelcomeController"/> -->
+	
+	<!-- ControllerBeanNameHandlerMapping -->
+	<bean class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping">
+		<property name="urlSuffix" value=".htm"/>
+	</bean>
+	
+	<bean id="vwc" class="com.ma.controller.ViewWelcomeController"/>
+	
+	<!-- BeanNameViewResolver -->
+	<!-- <bean id="vr" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+	
+	<bean id="welcome" class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/jsp/welcome.jsp"/>
+	</bean> -->
+	
+	<!-- InternalResourceViewResolver -->
+	<!-- <bean id="irvr" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean> -->
+	
+	<!-- XMLViewResolver -->
+	<!-- <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="location" value="/WEB-INF/views.xml"></property>
+	</bean> -->
+	
+	<!-- ResouceBundleViewResolver -->
+	<!-- <bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename" value="views"/>
+	</bean> -->
+	
+	<!-- URLBasedViewResolver -->
+	<!-- <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean> -->	
+</beans>
