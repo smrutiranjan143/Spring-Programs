@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Mar, 2019 6:43:24 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.hc.entities">
+	<class name="Technician" table="technician">
+		<id name="technicianNo" column="technician_no">
+			<generator class="increment" />
+		</id>
+		<property name="technicianName" column="technician_nm" />
+		<property name="experience" />
+		<property name="mobileNo" column="mobile_no" />
+		<property name="emailAddress" column="email_address" />
+		<property name="designation" />
+		<property name="joiningDate" column="joining_dt" />
+		<property name="skills" />
+	</class>
+	<!-- <query name="getProductsByName">from Product p where p.productName=?</query> -->
+</hibernate-mapping>
