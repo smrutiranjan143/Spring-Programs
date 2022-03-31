@@ -47,7 +47,7 @@
 		</plugins>
 	</build>
 	<properties>
-		<spring-mvc.version>4.3.23.RELEASE</spring-mvc.version>
+		<spring-mvc.version>5.3.18</spring-mvc.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
 		<jsp-api.version>2.3.3</jsp-api.version>
 		<jstl-version>1.2</jstl-version>
