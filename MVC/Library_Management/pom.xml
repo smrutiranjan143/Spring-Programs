@@ -54,7 +54,7 @@
 		</plugins>
 	</build>
 	<properties>
-		<mvc.version>4.3.24.RELEASE</mvc.version>
+		<mvc.version>5.3.18</mvc.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<java.version>1.8</java.version>
 		<servlet.version>4.0.1</servlet.version>
